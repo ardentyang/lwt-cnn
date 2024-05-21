@@ -32,8 +32,8 @@ The following table summarizes the structure of the core modules in the lightwei
 
 |LWT-CNN|Module|Structure|BN|act|
 |-|-|-|-|-|
-|SqueezeNet|Fire|squeeze (k=1 nc:arrow_down:) <br> + expand (k=1 nc:arrow_up: + k=3 nc:arrow_up: concat)|❌|ReLU|
-|Xception|SeparableConv2d <br> Block|pw (k=1 nc😐) + dw (k>1 nc:arrow_up:) <br> act + SeparableConv2d + BN|❌ <br> :heavy_check_mark:|❌ <br> :heavy_check_mark:|
-|MobileNet|Block|dw (k=3 nc😐) + pw (k=1 nc:arrow_up:)|:heavy_check_mark:|:heavy_check_mark:|
-|ShuffleNet|ShuffleUnit|gconv (k=1 nc:arrow_down:) <br> + channel shuffle <br> + dwconv (k=1 nc😐) <br> + gconv (k=1 nc:arrow_up:) <br> add/concat|:heavy_check_mark: <br> - <br> :heavy_check_mark: <br> :heavy_check_mark: <br> ❌|ReLU <br> - <br> ❌ <br> ❌ <br> ReLU|
+|SqueezeNet|Fire|squeeze (k=1 nc🔽) <br> + expand (k=1 nc🔼 + k=3 nc🔼 concat)|❌|ReLU|
+|Xception|SeparableConv2d <br> Block|pw (k=1 nc😐) + dw (k>1 nc🔼) <br> act + SeparableConv2d + BN|❌ <br> :heavy_check_mark:|❌ <br> :heavy_check_mark:|
+|MobileNet|Block|dw (k=3 nc😐) + pw (k=1 nc🔼)|:heavy_check_mark:|:heavy_check_mark:|
+|ShuffleNet|ShuffleUnit|gconv (k=1 nc🔽) <br> + channel shuffle <br> + dwconv (k=1 nc😐) <br> + gconv (k=1 nc🔼) <br> add/concat|:heavy_check_mark: <br> - <br> :heavy_check_mark: <br> :heavy_check_mark: <br> ❌|ReLU <br> - <br> ❌ <br> ❌ <br> ReLU|
 
