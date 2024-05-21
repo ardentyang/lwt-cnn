@@ -12,7 +12,7 @@ The first lightweight CNN dates back to **SqueezeNet** which was proposed in ICL
 <!-- What is the development trend of lightweight CNN? -->
 The picture below shows the development of lightweight CNN over the years.
 
-![development_path](https://github.com/ardentyang/lwt-cnn/tree/main/images/develop_path.jpg)
+![development_path](https://github.com/ardentyang/lwt-cnn/blob/main/images/develop_path.jpg)
 
 ## Quick tour of the core modules
 <!-- What are the core modules in each lightweight CNN? -->
